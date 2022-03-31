@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Problem 1 - My Leaderboard</title>
+
+    <link th:href="@{https://fonts.googleapis.com/css?family=Galada|Ubuntu:400,500,700}" rel="stylesheet">
+
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/iota.min.js"></script>
+
+    <script type="text/javascript" src="/js/helpers/updateLeaderboardHTML.js"></script>
+    <script type="text/javascript" src="/js/helpers/updateAddressHTML.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+<main>
+    <header class="header">
+        <p class="header__title">My <span><img class="header__logo" src="images/logo.png" /></span> Leaderboard</p>
+        <p class="header__title">Question 1</p>
+        <nav>
+            <div class="nav-right hidden-xs">
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="domin">
+        <div class="words">
+            <h3>description</h3>
+
+            <div class="description">
+                Propose a new query that produces the same result as the reference query in the same order for database
+                instances generated with the given scripts and that is as slow as possible.<br><br>
+                Do not modify the schema or the data.
+            </div>
+
+        </div>
+        <div class="answers">
+<!--            <div class="container">-->
+<!--                <pre class="pre"><span /><br /><br /></pre>-->
+<!--                <textarea class="content" oninput="changeContent()"></textarea>-->
+<!--            </div>-->
+            <textarea class="content"></textarea>
+
+            <div class="clears">
+                <button class="btn_1">clear</button>
+            </div>
+            <div class="submits">
+                <button class="btn_2">submit</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Sidebar -->
+<div class="sidebar donotdisplay">
+    <ul class="sidebar-list">
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-anchor" data-toggle="collapse" data-target="#setSeed" aria-expanded="false" aria-controls="setSeed">Username</a>
+
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-anchor" data-toggle="collapse" data-target="#getAddresses" aria-expanded="false" aria-controls="getAddresses">Log-out</a>
+
+        </li>
+        <li class="sidebar-item" style="opacity: 0">
+            interval
+        </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-anchor" data-toggle="collapse" data-target="#setSeed" aria-expanded="false" aria-controls="setSeed">Question answer</a>
+        </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-anchor" data-toggle="collapse" data-target="#setSeed" aria-expanded="false" aria-controls="setSeed">Leaderboard</a>
+        </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-anchor" data-toggle="collapse" data-target="#setSeed" aria-expanded="false" aria-controls="setSeed">History</a>
+        </li>
+    </ul>
+
+<!--    <script>-->
+<!--        function changeContent(){-->
+<!--            var $textarea = document.getElementsByClassName('content');-->
+<!--            var $pre = document.getElementsByClassName('pre');-->
+<!--            $pre[0].innerHTML = $textarea[0].value;-->
+<!--        }-->
+<!--    </script>-->
+
+</body>
+</html>
